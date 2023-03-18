@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    /* position: relative; */
+
+
 }
 
 .tituloPrincipal{
@@ -71,6 +75,7 @@
     margin: 0 10px;
 }
 
+
 .btnWP{
     height: 100vh;
     display: flex;
@@ -97,4 +102,5 @@
 .btnWP button img{
     margin: 0 10px;
 }
+
 

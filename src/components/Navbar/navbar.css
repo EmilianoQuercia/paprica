@@ -14,11 +14,13 @@
     align-items: center;
     margin-left: 50px;
 }
-.nav a{
-  text-decoration: none;
+
+.nav span{
   color: white;
   font-size: 20px;
   margin: 0 50px;
+  cursor: pointer;
+
 
 }
 

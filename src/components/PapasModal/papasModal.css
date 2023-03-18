@@ -1,0 +1,92 @@
+.containerPapas{
+    /* width: 760px;
+    height: 650px; */
+    background-color: #a51926;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 150px;
+    left: 320px;
+    opacity: 1;
+}
+
+
+
+.containerInfoPapas{
+    background-color: #eee;
+    margin: 30px 32px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.btnCerrar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnCerrar button{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnCerrar button{
+    border: none;
+}
+
+.InfoPapas{
+    margin: 30px 30px 60px 30px ;
+}
+
+.infoPapasBelga{
+       width: 560px;
+    height: 400px;
+}
+
+.InfoPapas h2{
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.InfoPapas p{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.btnPapas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnPapas :nth-child(1){
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.btnPapas :nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    border-radius: 100px;
+    background-color: #f7f221;
+    border: none;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25) ;
+}
+
+.btnPapas :nth-child(2) img{
+    margin: 0 10px;
+    width: 24px;
+    height: 24px;
+}

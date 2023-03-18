@@ -1,3 +1,4 @@
+
 import React from "react";
 import BtnWhatsapp from "../components/BtnWhatsapp/BtnWhatsapp";
 import Portada from "../components/Portada/Portada";
@@ -13,5 +14,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;

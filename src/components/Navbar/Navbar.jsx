@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PapasModal from '../PapasModal/PapasModal';
@@ -25,6 +26,7 @@ const Navbar = () => {
         <div className='containerNav'>
             <nav className='nav'>
                 <img src="./assets/img/Logo1.png" alt="" />
+                
                 <span onClick={handleModalUbicacion}>Como llegar</span>
                 {modalUbicacion && <PapasModal
                     setModalUbicacion={setModalUbicacion}
@@ -54,7 +56,8 @@ const Navbar = () => {
                     <img  src="./assets/img/salsas.png" alt="carta de combos" />
                 </div>
                 </PapasModal>
-                }
+                }           
+
             </nav>
             <div className='redes'>
                 <Link to={''}><img src='./assets/img/logoWhatsapp.png'/></Link>

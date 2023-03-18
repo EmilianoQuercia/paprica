@@ -1,6 +1,6 @@
 .containerPapas{
-    width: 760px;
-    height: 650px;
+    /* width: 760px;
+    height: 650px; */
     background-color: #a51926;
     border-radius: 20px;
     box-shadow: 0 0 10px #000;
@@ -36,6 +36,11 @@
 
 .InfoPapas{
     margin: 30px 30px 60px 30px ;
+}
+
+.infoPapasBelga{
+       width: 560px;
+    height: 400px;
 }
 
 .InfoPapas h2{

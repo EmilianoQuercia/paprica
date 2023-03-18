@@ -6,6 +6,9 @@ import PapasModal from '../components/PapasModal/PapasModal';
 import Home from '../pages/Home';
 
 const IndexRoutes = () => {
+
+
+    
     return (
         <BrowserRouter>
             <Navbar/>    

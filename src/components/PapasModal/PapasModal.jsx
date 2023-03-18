@@ -12,15 +12,17 @@ const PapasModal = ({setModal, setModalCombos, setModalSalsas, modal, modalCombo
     }
 
     return (
-        <div className= 'containerPapas'>
-            <div className='containerInfoPapas'>
-                <div className='btnCerrar'>
-                    <button onClick={ocultarModal}><AiOutlineClose/></button>
-                </div>
-                {children}
-                <div className='btnPapas'>
-                    <button onClick={ocultarModal}>Quiero seguir mirando</button>
-                    <button><img src="./assets/img/WPnegro.png" alt="logo whatsapp" /> Pide aquí tus papas</button>
+        <div className='containerModal'>
+            <div className= 'containerPapas'>
+                <div className='containerInfoPapas'>
+                    <div className='btnCerrar'>
+                        <button onClick={ocultarModal}><AiOutlineClose/></button>
+                    </div>
+                    {children}
+                    <div className='btnPapas'>
+                        <button onClick={ocultarModal}>Quiero seguir mirando</button>
+                        <button><img src="./assets/img/WPnegro.png" alt="logo whatsapp" /> Pide aquí tus papas</button>
+                    </div>
                 </div>
             </div>
         </div>

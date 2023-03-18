@@ -8,16 +8,12 @@ import Home from '../pages/Home';
 const IndexRoutes = () => {
 
 
-    
+
     return (
         <BrowserRouter>
             <Navbar/>    
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                {/* <Route path='/como-llegar' element={<ComoLlegar/>}/> */}
-                {/* <Route path='/comida' element={<PapasModal/>}/> */}
-                {/* <Route path='/salsas' element={<Salsas/>}/> */}
-                {/* <Route path='/domicilio' element={<Domicilio/>}/> */}
             </Routes>
             <Footer/>
 

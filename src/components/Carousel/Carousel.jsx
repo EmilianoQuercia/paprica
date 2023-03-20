@@ -1,26 +1,50 @@
-import React, { useState } from "react";
 import "./Carousel.css";
+import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const Carousel = ({ images }) => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    const handlePrevClick = () => {
-        setCurrentImageIndex(currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1);
+const PartiallyVisibleCarousel = ({ images }) => {
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3,
+            slidesToSlide: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 2,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1,
+        },
     };
 
-    const handleNextClick = () => {
-        setCurrentImageIndex((currentImageIndex + 1) === images.length - 1 ? 0 : currentImageIndex + 1);
+    const partialVisibilitySettings = {
+        shift: 30,
+        dragStep: 1,
+        // Change the below value to adjust the amount of visibility
+        // for the next and previous items in the carousel
+        partialVisibilityGutter: 40,
     };
 
     return (
-        <div className="carousel">
-            <button className="carousel-button" onClick={handlePrevClick}>{"<"}</button>
-            <img className="carousel-image" src={images[currentImageIndex]} alt="Carousel Image" />
-            <img className="carousel-image" src={images[currentImageIndex+1]} alt="Carousel Image" />
-            {/* <img className="carousel-image" src={images[currentImageIndex+2]} alt="Carousel Image" /> */}
-            <button className="carousel-button" onClick={handleNextClick}>{">"}</button>
-        </div>
+        <Carousel
+            responsive={responsive}
+            partialVisible={true}
+            customButtonGroup={<button>Next</button>}
+            partialVisibleSliderProps={partialVisibilitySettings}
+            containerClass="carousel"
+        >
+            {images.map((imageUrl, index) => (
+                <div key={index}>
+                    <img src={imageUrl} alt="Carousel Image" height={"290px"} />
+                </div>
+            ))}
+        </Carousel>
     );
 };
 
-export default Carousel;
+export default PartiallyVisibleCarousel;

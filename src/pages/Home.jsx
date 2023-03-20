@@ -2,20 +2,29 @@
 import React from "react";
 import BtnWhatsapp from "../components/BtnWhatsapp/BtnWhatsapp";
 import Portada from "../components/Portada/Portada";
-import Carousel from "../components/Carousel/Carousel";
+import PartiallyVisibleCarousel from "../components/Carousel/Carousel";
+
+const images = [
+  "../../assets/img/card product 2.png",
+  "../../assets/img/card product 4.png",
+  "../../assets/img/card product 5.png",
+  "../../assets/img/card product 6.png",
+  "../../assets/img/card product 7.png",
+  "../../assets/img/card product 8.png",
+  "../../assets/img/cardPatacones.png",
+];
+
 
 const Home = () => {
   return (
     <div>
       <BtnWhatsapp/>
       <Portada />
-      {/* aca iria un array con las imagenes previamente hecho */}
-      <Carousel images={["https://www.clara.es/medio/2021/12/16/que-comer-hoy-ideas_21beeb02_1200x630.jpg",
-      "https://static-sevilla.abc.es/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
-      "https://www.cocinacaserayfacil.net/wp-content/uploads/2020/04/Recetas-de-comidas-para-ni%C3%B1os.jpg"]}/>
       <h1>Remplazar por componente carrucel 1</h1>
       <h1>Remplazar por componente carrucel 2</h1>
       <h1>Remplazar por componente carrucel 3</h1>
+      <PartiallyVisibleCarousel images={images} />
+      
     </div>
   );
 };

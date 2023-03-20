@@ -1,6 +1,6 @@
-.carousel {
+/* .carousel {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 300px;
     position: relative;
@@ -31,4 +31,7 @@
 
 .carousel-button:last-of-type {
     right: 20px;
+} */
+.carousel{
+    margin: 20px 50px;
 }

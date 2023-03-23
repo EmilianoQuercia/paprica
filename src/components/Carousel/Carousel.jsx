@@ -3,7 +3,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const PartiallyVisibleCarousel = ({ images }) => {
+const PartiallyVisibleCarousel = ({ items,images,title,btn }) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -13,7 +13,7 @@ const PartiallyVisibleCarousel = ({ images }) => {
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2,
-            slidesToSlide: 2,
+            slidesToSlide: 1,
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -31,19 +31,25 @@ const PartiallyVisibleCarousel = ({ images }) => {
     };
 
     return (
-        <Carousel
-            responsive={responsive}
-            partialVisible={true}
-            customButtonGroup={<button>Next</button>}
-            partialVisibleSliderProps={partialVisibilitySettings}
-            containerClass="carousel"
-        >
-            {images.map((imageUrl, index) => (
-                <div key={index}>
-                    <img src={imageUrl} alt="Carousel Image" height={"290px"} />
-                </div>
-            ))}
-        </Carousel>
+        <>
+            <div className="dataCarouselContainer">
+                <div className="titleCarousel">{title}</div>
+                <div className="btnCarousel" href="google.com">{btn}</div>
+            </div>
+            <Carousel
+                responsive={responsive}
+                partialVisible={true}
+                customButtonGroup={<button>Next</button>}
+                partialVisibleSliderProps={partialVisibilitySettings}
+                containerClass="carousel"
+            >
+                {images.map((imageUrl, index) => (
+                    <div key={index}>
+                        <img src={imageUrl} alt="Carousel Image" height="290px" />
+                    </div>
+                ))}
+            </Carousel>
+        </>
     );
 };
 

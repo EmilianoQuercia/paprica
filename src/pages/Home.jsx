@@ -7,11 +7,14 @@ import PartiallyVisibleCarousel from "../components/Carousel/Carousel";
 const images = [
   "../../assets/img/card product 2.png",
   "../../assets/img/card product 4.png",
-  "../../assets/img/card product 5.png",
-  "../../assets/img/card product 6.png",
-  "../../assets/img/card product 7.png",
-  "../../assets/img/card product 8.png",
-  "../../assets/img/cardPatacones.png",
+  "../../assets/img/card product 5.png"
+];
+const imagesDomicilio = [
+  "../../assets/img/card product 2domicilio.png",
+  "../../assets/img/card product 4domicilio.png",
+  "../../assets/img/card product 5domicilio.png",
+  "../../assets/img/card product 6domicilio.png",
+  "../../assets/img/cardproductdomicilio.png"
 ];
 
 
@@ -20,11 +23,8 @@ const Home = () => {
     <div>
       <BtnWhatsapp/>
       <Portada />
-      <h1>Remplazar por componente carrucel 1</h1>
-      <h1>Remplazar por componente carrucel 2</h1>
-      <h1>Remplazar por componente carrucel 3</h1>
-      <PartiallyVisibleCarousel images={images} />
-      
+      <PartiallyVisibleCarousel images={images} items={3} title={"Para compartir con toda la familia"} btn={"Pide aquí"}/>
+      <PartiallyVisibleCarousel images={imagesDomicilio} items={4} title={"Pide nuestos productos a domicilio"} btn={"Aquí"}/>
     </div>
   );
 };

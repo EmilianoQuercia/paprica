@@ -1,13 +1,14 @@
 .containerMain{
-    background-image: url('./assets/img/imgPrincipal.png');
+    background-image: url('./assets/img/portada.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
+   
 
     /* position: relative; */
 
@@ -15,15 +16,15 @@
 }
 
 .tituloPrincipal{
-    color: #FFE528;
-    font-size: 65px;
+    color: #fff;
+    font-size: 55px;
     font-weight: 900; 
-    width: 60%;
+    width: 50%;
 }
 
 .tituloSecundario{
     color: #fff;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 600;
     width: 50%;
     margin: 10px 0;

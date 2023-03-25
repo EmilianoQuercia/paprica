@@ -28,7 +28,9 @@ const Navbar = () => {
 
   return (
     <div className="containerNav">
-      <img src="./assets/img/Logo1.png" alt="" />
+      <a href={'#home'}>
+        <img src="./assets/img/Logo1.png" alt="" />
+      </a>
 
       <nav className="nav">
         <span onClick={handleModalPapas}>¿Papas Belgas?</span>
@@ -88,16 +90,16 @@ const Navbar = () => {
             Categorias
           </Dropdown.Toggle>
           <Dropdown.Menu className="opcionesDrop">
-            <Dropdown.Item className="opc" href="#/action-1">
+            <Dropdown.Item className="opc" href="#combos">
               Combos
             </Dropdown.Item>
-            <Dropdown.Item className="opc" href="#/action-2">
+            <Dropdown.Item className="opc" href="#snack">
               Snack
             </Dropdown.Item>
-            <Dropdown.Item className="opc" href="#/action-3">
+            <Dropdown.Item className="opc" href="#bebidas">
               Bebidas
             </Dropdown.Item>
-            <Dropdown.Item className="opc" href="#/action-4">
+            <Dropdown.Item className="opc" href="#extras">
               Extras
             </Dropdown.Item>
           </Dropdown.Menu>

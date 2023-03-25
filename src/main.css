@@ -9,4 +9,12 @@
 
 body{
     overflow-x: hidden;
+    background-image: url('./assets/img/imgBack.png');
+    
+}
+
+.containerOpiniones{
+    background-color: #F7F221;
+    padding: 20px 0;
+    border-radius: 200px 200px 0 0;
 }

@@ -18,7 +18,7 @@ const Footer = () => {
                 <GoCalendar/>
                 <h4>Dias</h4>
               </div>
-              <p>Lunea a Viernes</p>
+              <p>Martes a Viernes</p>
               <p>Sábados y Domingos</p>
             </div>
             <div>

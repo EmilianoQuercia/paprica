@@ -5,8 +5,8 @@ const BtnWhatsapp = () => {
     return (
         <div className="btnWP">
             <button>
-                {"Pedi por WhatsApp"}
                 <img src="./assets/img/WPnegro.png" alt="logo whatsapp" />
+                {"Realiza tu pedido"}
             </button>
         </div>
     );

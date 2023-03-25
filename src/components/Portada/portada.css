@@ -32,35 +32,15 @@
 .botones{
     display: flex;
     align-items: center;
-}
-
-.btnPapasBelgas{
-    margin-top: 30px;
-    width: 230px;
-    height: 50px;
-    padding: 10px, 35px, 10px, 35px;
-    border-radius: 8px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-    margin-right: 30px;
-    cursor: pointer;
-}
-.btnPapasBelgas img{
-    margin: 0 10px;
+    
 }
 
 .btnPideaqui{
     margin-top: 30px;
-    width: 230px;
+    width: 50%;
     height: 50px;
     padding: 10px, 35px, 10px, 35px;
-    border-radius: 8px;
+    border-radius: 50px;
     background-color: #FFE528;
     border: 2px solid #FFE528;
     color: #000;

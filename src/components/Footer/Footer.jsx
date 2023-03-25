@@ -39,7 +39,10 @@ const Footer = () => {
             </div>
           </div>
           <div>
-          
+            <a href="https://wa.me/573052975504" target={"_blank"} className="infoRedes">
+              <img src="./assets/img/logoWhatsapp.png" alt="" />
+                <p>+57 305  2975504</p>
+            </a>
             <a href="https://www.facebook.com/carlo.duarte.37201" target={"_blank"} className="infoRedes">
               <img src="./assets/img/logoFacebook.png" alt="" />
               <p>Paprika Papas Belgas</p>
@@ -51,7 +54,8 @@ const Footer = () => {
           </div>
       </div>
       <div>
-        <p className="copy">© 2023 Paprika Papas Belgas. Todos los derechos reservados.</p>
+        <p className="copy">2023 Paprika Papas Belgas.<div>© Todos los derechos reservados.</div></p>
+        
       </div>
     </footer>
   );

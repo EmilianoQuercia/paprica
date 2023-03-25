@@ -9,8 +9,7 @@ const Portada = () => {
             <main className='containerMain'>
                 <div className='containerInfoPortada'>
                     <h1 className='tituloPrincipal'>¿ESCUCHAS CRUNCH CRUNCH?</h1>
-                    <h2 className='tituloSecundario'>Estás comiendo </h2>
-                    <h2 className='tituloSecundario'>papas belga de Paprica</h2>
+                    <h2 className='tituloSecundario'>Estás comiendo papas belga de <div>Paprica</div></h2>
                     <div className='botones'>
                         <button className='btnPideaqui'><img src="./assets/img/WPnegro.png" alt="logo whatsapp" />Pide aquí</button>
                     </div>

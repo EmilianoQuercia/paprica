@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     width: 40%;
+    align-items: center;
 }
 
 .infoTitulos{
@@ -46,13 +47,18 @@
 
 .infoRedes{
     display: flex;
-    align-items: center;
-    margin: 10px;
+    margin: 12px;
     text-decoration: none;
-    color: #fff
+    text-decoration-style: none;
+    color: #fff;
 }
 .infoRedes p{
     margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.infoRedes:hover{
+    color: #fff;
 }
 
 .copy{

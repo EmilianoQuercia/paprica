@@ -3,7 +3,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
+const Carrousel2 = ({ items, images, title, texto }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -50,14 +50,10 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
           >
             {image.img && <img src={image.img} alt="Carousel Image" />}
             <h5>{image.title}</h5>
-            {image.type.map((type, index) => (
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
-                <span key={index} className={type.color}>
-                  {type.type}
-                </span>
-                <span>{type.price}</span>
-              </div>
-            ))}
+
+            <span>{image.price}</span>
+
+            <span className={image.color}>{image.type}</span>
           </div>
         ))}
       </Carousel>
@@ -65,4 +61,4 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
   );
 };
 
-export default PartiallyVisibleCarousel;
+export default Carrousel2;

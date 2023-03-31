@@ -1,58 +1,68 @@
-.containerMain{
-    background-image: url('./assets/img/portada.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 50px;
-   
+.containerMain {
+  background-image: url("./assets/img/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
 
-    /* position: relative; */
-
-
+  /* position: relative; */
 }
 
-.tituloPrincipal{
-    color: #fff;
-    font-size: 55px;
-    font-weight: 900; 
-    width: 50%;
+.tituloPrincipal {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 900;
+  width: 50%;
 }
 
-.tituloSecundario{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    width: 50%;
-    margin: 10px 0;
+.tituloSecundario {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  width: 50%;
+  margin: 10px 0;
 }
 
-.botones{
-    display: flex;
-    align-items: center;
-    
+.botones {
+  display: flex;
+  align-items: center;
 }
 
-.btnPideaqui{
-    margin-top: 30px;
-    width: 50%;
-    height: 50px;
-    padding: 10px, 35px, 10px, 35px;
-    border-radius: 50px;
-    background-color: #FFE528;
-    border: 2px solid #FFE528;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
+.Pideaqui {
+  text-decoration: none;
+  margin-top: 30px;
+  width: 50%;
+  height: 50px;
+  padding: 10px, 35px, 10px, 35px;
+  border-radius: 50px;
+  background-color: #ffe528;
+  border: 2px solid #ffe528;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.btnPideaqui img{
-    margin: 0 10px;
+.btnPideaqui {
+  background-color: #ffe528;
+  border: 2px solid #ffe528;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnPideaqui a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btnPideaqui img {
+  margin: 0 10px;
 }

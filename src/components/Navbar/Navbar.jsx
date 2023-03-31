@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className="containerNav">
-      <a href={'#home'}>
+      <a href={"#home"}>
         <img src="./assets/img/Logo1.png" alt="" />
       </a>
 
@@ -40,12 +40,16 @@ const Navbar = () => {
               <h2>¿Papas belgas?</h2>
               <p>
                 {" "}
-                También conocidas como frites, que son un platillo típico de la cocina belga. Lo que hace que estas papas fritas sean diferentes a otras es su técnica de preparación..
+                También conocidas como frites, que son un platillo típico de la
+                cocina belga. Lo que hace que estas papas fritas sean diferentes
+                a otras es su técnica de preparación..
               </p>
               <p>
-              Son cortadas en bastones gruesos y fritas dos veces a diferentes temperaturas en aceite de sebo de vaca, lo que les da una textura exterior crujiente y un interior suave, y un sabor y aroma característico.
+                Son cortadas en bastones gruesos y fritas dos veces a diferentes
+                temperaturas en aceite de sebo de vaca, lo que les da una
+                textura exterior crujiente y un interior suave, y un sabor y
+                aroma característico.
               </p>
-             
             </div>
           </PapasModal>
         )}
@@ -58,7 +62,10 @@ const Navbar = () => {
           >
             <div className="InfoPapas infoMapa">
               <h2>¿Cómo llegar?</h2>
-              <p>Nos encontramos en el mall Villa Verde Plaza ubicado en Cra. 37 #30-51, Pereira, Risaralda, Colombia.</p>
+              <p>
+                Nos encontramos en el mall Villa Verde Plaza ubicado en Cra. 37
+                #30-51, Pereira, Risaralda, Colombia.
+              </p>
               <p>De martes a viernes de 17:00 a 22:00 hs</p>
               <p>Sábados y Domingos de 12:00 a 22:00 hs</p>
 
@@ -104,9 +111,12 @@ const Navbar = () => {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Link to={""}>
+        <a
+          href="https://wa.me/573052975504?text=Hola+Paprika%21+Quisiera+hacer+un+pedido"
+          target={"_blank"}
+        >
           <img src="./assets/img/logoWhatsapp.png" />
-        </Link>
+        </a>
         <a href="https://www.facebook.com/carlo.duarte.37201" target={"_blank"}>
           <img src="./assets/img/logoFacebook.png" />
         </a>

@@ -103,6 +103,13 @@
 .opinion h5 {
   margin: 10px 20px;
   margin-bottom: 20px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .opinion .typeCarrousel {

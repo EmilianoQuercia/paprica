@@ -15,5 +15,4 @@ const IndexRoutes = () => {
     </BrowserRouter>
   );
 };
-
 export default IndexRoutes;

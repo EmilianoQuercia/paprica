@@ -91,7 +91,7 @@
 .opinion {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin: 10px;
   height: 280px;
   border-radius: 15px;
@@ -110,6 +110,7 @@
   line-height: 22px;
   display: flex;
   align-items: center;
+  height: 193px;
 }
 
 .opinion .typeCarrousel {

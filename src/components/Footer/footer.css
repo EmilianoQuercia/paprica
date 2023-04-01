@@ -10,8 +10,11 @@
 .containerFooter {
   width: 100%;
   height: 250px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   justify-content: space-around;
+  padding-left: 42px;
+  padding-right: 42px;
   align-items: center;
   color: aliceblue;
 }
@@ -26,10 +29,14 @@
   margin-bottom: 10px;
 }
 
+.containerInfoFooter{
+  display: grid ;
+  grid-template-columns: 1fr auto;
+}
+
 .infoFooter {
   display: flex;
-  justify-content: space-between;
-  width: 40%;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -45,12 +52,17 @@
   margin-left: 10px;
 }
 
+.redesFooter{
+  display: grid;
+  align-items: center;
+}
+
 .infoRedes {
-  display: flex;
   margin: 12px;
   text-decoration: none;
   text-decoration-style: none;
   color: #fff;
+  display: flex;
 }
 .infoRedes p {
   margin-left: 10px;
@@ -62,6 +74,7 @@
 }
 
 .copy {
+  padding-top: 10px;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -72,10 +85,23 @@
   .containerFooter {
     flex-direction: column;
     height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 20px;
+  }
+  .containerInfoFooter{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
   }
   .infoFooter {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .infoRedes{
+    margin-left: 0;
   }
 }
 
@@ -83,8 +109,7 @@
   .infoFooter {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: start;
-    margin: 15px;
+    margin-right: 25px;
     gap: 10px;
   }
 }

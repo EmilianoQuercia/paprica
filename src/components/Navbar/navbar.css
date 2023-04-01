@@ -1,0 +1,147 @@
+.containerNav {
+  background-color: #a51926;
+  border-radius: 0 0 50px 50px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.nav span,
+.drop {
+  color: white;
+  font-size: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.drop {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #a51926;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #a51926;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #a51926;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.opcionesDrop {
+  background-color: #a51926;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+}
+.opc:hover {
+  background-color: transparent;
+}
+
+.opc {
+  color: #fff;
+  font-size: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 20px;
+}
+.contGeneral {
+  display: flex;
+  flex-direction: column;
+}
+.menuHamb {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.headerHamb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.containerHamb {
+  background-color: #a51926;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1100;
+}
+
+.navHamb {
+  background-color: #a51926;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  height: 100vh;
+  margin: 90px 0 0 0;
+  padding: 80px 20px;
+  cursor: pointer;
+}
+
+.navHamb span,
+.drop {
+  color: white;
+  font-size: 20px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.drop {
+  margin: 10px 7px;
+}
+
+.redesHamb {
+  display: flex;
+}
+
+.redesHamb a {
+  margin: 0 10px;
+}
+
+.botonNav {
+  margin-top: 60px;
+}

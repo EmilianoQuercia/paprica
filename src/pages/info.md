@@ -1,1 +1,0 @@
-Aqui colocaremos la estructura de cada pagina.

@@ -1,0 +1,30 @@
+.containerExtras {
+  margin: 90px 20px 30px 50px;
+}
+
+.titulo {
+  font-size: 34px;
+}
+.cardExtra {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.extras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 24px rgba(158, 158, 158, 0.2);
+  background-color: #fff;
+}
+
+.extras h5 {
+  font-size: 40px;
+}

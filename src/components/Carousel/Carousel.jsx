@@ -11,12 +11,12 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
       slidesToSlide: 1,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 620 },
       items: 2,
       slidesToSlide: 1,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 620, min: 0 },
       items: 1,
       slidesToSlide: 1,
     },
@@ -42,6 +42,7 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
         // customButtonGroup={<button>Next</button>}
         partialVisibleSliderProps={partialVisibilitySettings}
         containerClass="carousel"
+        className="p"
       >
         {images.map((image, index) => (
           <div
@@ -51,10 +52,8 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
             {image.img && <img src={image.img} alt="Carousel Image" />}
             <h5>{image.title}</h5>
             {image.type.map((type, index) => (
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
-                <span key={index} className={type.color}>
-                  {type.type}
-                </span>
+              <div key={index} style={{ display: "flex", flexWrap: "wrap" }}>
+                <span className={type.color}>{type.type}</span>
                 <span>{type.price}</span>
               </div>
             ))}

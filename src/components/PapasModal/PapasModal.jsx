@@ -23,22 +23,26 @@ const PapasModal = ({
 
   return (
     <div className="containerModal">
-    
-        <div className="containerInfoPapas">
-          <div className="btnCerrar">
-            <button onClick={ocultarModal}>
-              <AiOutlineClose />
-            </button>
-          </div>
-          {children}
-          <div className="btnPapas">
-            <button>
-              <img src="./assets/img/WPnegro.png" alt="logo whatsapp" /> Pedir Ahora
-            </button>
-            <button onClick={ocultarModal}>Cerrar</button>
-          </div>
+      <div className="containerInfoPapas">
+        <div className="btnCerrar">
+          <button onClick={ocultarModal}>
+            <AiOutlineClose />
+          </button>
         </div>
-     
+        {children}
+        <div className="btnPapas">
+          <a
+            href="https://wa.me/573052975504?text=Hola+Paprika%21+Quisiera+hacer+un+pedido"
+            target={"_blank"}
+          >
+            <button>
+              <img src="./assets/img/WPnegro.png" alt="logo whatsapp" /> Pedir
+              Ahora
+            </button>
+          </a>
+          <button onClick={ocultarModal}>Cerrar</button>
+        </div>
+      </div>
     </div>
   );
 };

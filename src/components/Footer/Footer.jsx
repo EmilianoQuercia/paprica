@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="Footer">
       <div className="containerFooter">
         <div className="logofooter">
-          <img src="./assets/img/Logo-web.png" alt="" />
+          <img src="./assets/img/Logo1.png" alt="" />
           <h5>Las únicas papas de Pereira</h5>
         </div>
         <div className="infoFooter">

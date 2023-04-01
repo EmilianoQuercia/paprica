@@ -31,7 +31,7 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
   };
 
   return (
-    <>
+    <div className="containerCarrousel">
       <div className="dataCarouselContainer">
         <div className="titleCarousel">{title}</div>
         <div className="textCarousel">{texto}</div>
@@ -53,14 +53,16 @@ const PartiallyVisibleCarousel = ({ items, images, title, texto }) => {
             <h5>{image.title}</h5>
             {image.type.map((type, index) => (
               <div key={index} style={{ display: "flex", flexWrap: "wrap" }}>
-                <span className={type.color}>{type.type}</span>
-                <span>{type.price}</span>
+                <span className={`${type.color} typeCarrousel`}>
+                  {type.type}
+                </span>
+                <span className="priceCarrousel">{type.price}</span>
               </div>
             ))}
           </div>
         ))}
       </Carousel>
-    </>
+    </div>
   );
 };
 

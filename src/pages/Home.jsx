@@ -17,17 +17,22 @@ const Home = () => {
     <div id="home">
       <BtnWhatsapp />
       <Portada />
-      <div id="combos">
+
+      <div id="combos"></div>
+      <br />
+      <div>
         <PartiallyVisibleCarousel
           images={carruselCombos}
           title={"Combos"}
           texto={""}
         />
       </div>
-      <div id="snack">
+      <div id="snack"></div>
+      <div>
         <Carrousel2 images={carruselSnack} title={"Snacks"} texto={""} />
       </div>
-      <div id="bebidas">
+      <div id="bebidas"></div>
+      <div>
         <Carrousel2
           images={carruselBebidas}
           title={"Bebidas (14 onzas)"}
@@ -35,13 +40,14 @@ const Home = () => {
         />
       </div>
 
-      <div id="extras">
+      <div id="extras"></div>
+      <div>
         <Extras extras={extras} title={"Extras"} />
       </div>
       <div className="containerOpiniones">
         <Carrousel2
           images={opiniones}
-          title={"Lo que dicen nuestro clientes"}
+          title={"Lo que dicen nuestros clientes"}
           texto={""}
         />
       </div>

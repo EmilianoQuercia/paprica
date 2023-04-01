@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import PapasModal from "../PapasModal/PapasModal";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
+import { IoIosMenu } from "react-icons/io";
 
 import "./navbar.css";
 import "../PapasModal/papasModal.css";
@@ -116,7 +116,7 @@ const Navbar = () => {
                   Combos
                 </Dropdown.Item>
                 <Dropdown.Item className="opc" href="#snack">
-                  Snack
+                  Snacks
                 </Dropdown.Item>
                 <Dropdown.Item className="opc" href="#bebidas">
                   Bebidas
@@ -157,7 +157,7 @@ const Navbar = () => {
                 {isOpen ? (
                   <RxCross1 className="menuHamb" />
                 ) : (
-                  <GiHamburgerMenu className="menuHamb" />
+                  <IoIosMenu className="menuHamb" />
                 )}
               </button>
             </div>
@@ -252,7 +252,7 @@ const Navbar = () => {
                     href="#snack"
                     onClick={toggleMenu}
                   >
-                    Snack
+                    Snacks
                   </Dropdown.Item>
                   <Dropdown.Item
                     className="opc"

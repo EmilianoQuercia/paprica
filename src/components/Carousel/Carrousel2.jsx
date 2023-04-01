@@ -31,7 +31,7 @@ const Carrousel2 = ({ items, images, title, texto }) => {
   };
 
   return (
-    <>
+    <div className="containerCarrousel">
       <div className="dataCarouselContainer">
         <div className="titleCarousel">{title}</div>
         <div className="textCarousel">{texto}</div>
@@ -51,13 +51,13 @@ const Carrousel2 = ({ items, images, title, texto }) => {
             {image.img && <img src={image.img} alt="Carousel Image" />}
             <h5>{image.title}</h5>
 
-            <span>{image.price}</span>
+            <span className="priceCarrousel">{image.price}</span>
 
-            <span className={image.color}>{image.type}</span>
+            <span className={`${image.color} typeCarrousel`}>{image.type}</span>
           </div>
         ))}
       </Carousel>
-    </>
+    </div>
   );
 };
 

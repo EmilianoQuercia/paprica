@@ -9,8 +9,8 @@ const BtnWhatsapp = () => {
         target={"_blank"}
       >
         <button>
-          <img src="./assets/img/WPnegro.png" alt="logo whatsapp" />
-          {"Realiza tu pedido"}
+          <img src="./assets/img/logoWhatsapp.png" alt="logo whatsapp" />
+          <div>{"Realiza tu pedido"}</div>
         </button>
       </a>
     </div>

@@ -64,7 +64,7 @@ export const carruselSnack = [
     img: "../../assets/img/wafle.png",
     title: "Wafle belga",
     price: "$ 6.500",
-    type: "Sirope y mantequilla // Chocolate",
+    type: "Sirope y mantequilla / Chocolate",
     color: "azul",
   },
   {
@@ -150,7 +150,7 @@ export const extras = [
 export const opiniones = [
   {
     title:
-      "“Que rico saber que están de nuevo, la verdad tienen un producto único y con orgullo los recomiedno a quien me pregunta por lugares con comida rica. Me gustan que sean íntegros, y que no paguen a gente para decir verdades sobre sus ricos productos.” ",
+      "“Que rico saber que están de nuevo, la verdad tienen un producto único y con orgullo los recomiendo a quien me pregunta por lugares con comida rica. Me gustan que sean íntegros, y que no paguen a gente para decir verdades sobre sus ricos productos.” ",
     type: "Juan",
     opinion: "opinion",
   },

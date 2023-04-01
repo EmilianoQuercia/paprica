@@ -1,5 +1,5 @@
 .containerMain {
-  background-image: url("./assets/img/portada.png");
+  background-image: url("../assets/img/portada.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -68,7 +68,7 @@
 
 @media (max-width: 992px) {
   .containerMain {
-    background-image: url("./assets/img/portada1.png");
+    background-image: url("../assets/img/portada1.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 50px 50px;

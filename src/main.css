@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,900;1,400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Barlow', sans-serif ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
 }
 
-body{
-    overflow-x: hidden;
-    background-image: url('./assets/img/imgBack.png');
-    
+body {
+  overflow-x: hidden;
+  background-image: url("../assets/img/imgBack.png");
 }
 
-.containerOpiniones{
-    background-color: #F7F221;
-    padding: 20px 0;
-    border-radius: 200px 200px 0 0;
+.containerOpiniones {
+  background-color: #f7f221;
+  padding: 20px 0;
+  border-radius: 200px 200px 0 0;
 }
